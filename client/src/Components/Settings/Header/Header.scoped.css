@@ -1,0 +1,41 @@
+.settings-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  border: 1px solid var(--section-border-color);
+  border-radius: 12px;
+  background-color: var(--section-bg);
+  padding: 20px;
+}
+
+.settings-assistant {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.settings-assistant span {
+  font-family: var(--font);
+  font-size: var(--font-size-h3);
+  font-weight: 700;
+}
+
+.iconic {
+  font-size: 20px;
+}
+
+.hamburger-menu {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+@media (max-width: 648px) {
+  .settings-assistant span {
+    font-size: var(--font-size-large);
+  }
+}

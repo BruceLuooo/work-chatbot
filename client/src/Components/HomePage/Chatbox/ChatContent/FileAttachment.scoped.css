@@ -1,0 +1,53 @@
+.file-attachment-container {
+  width: 100%;
+  max-width: 784px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0px 12px 28px;
+
+  border: 1px solid white;
+  border-radius: 64px;
+
+  font: var(--font);
+  font-size: 2rem;
+  color: white;
+}
+
+.text-file-data {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.file-name-text {
+  color: var(--text-color-dark);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.file-name-text:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.file-size-text {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+@media (max-width: 648px) {
+  .text-file-data {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .file-name-text {
+    max-width: 85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+  }
+}

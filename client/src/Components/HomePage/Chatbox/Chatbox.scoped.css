@@ -1,0 +1,111 @@
+.chatbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 128px;
+  width: 100%;
+  border: 1px solid var(--section-border-color);
+  border-radius: 12px;
+  background-color: var(--section-bg);
+  padding: 40px 40px 20px;
+  flex-grow: 1;
+}
+
+.chat-messages {
+  width: 100%;
+  flex-grow: 1;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  overflow-y: scroll;
+  transition: padding-left 0.2s ease-in-out;
+}
+
+@media (min-width: 920px) {
+  .chat-messages-xl {
+    padding-left: calc(50% - 392px);
+  }
+}
+
+.chat-messages-xl {
+  transition: none;
+}
+
+.prompt-input-bar {
+  align-self: center;
+  width: 100%;
+  max-width: 1920px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: max-width 0.2s ease-in-out;
+}
+
+.prompt-input-bar-xl {
+  max-width: 784px;
+  transition: none;
+}
+
+.prompt-input {
+  height: 52px;
+  flex-grow: 1;
+  padding-left: 28px;
+  border: none;
+  border-radius: 64px;
+  background-color: var(--input-bg);
+
+  font-family: var(--font);
+  font-size: var(--font-size-big);
+  font-weight: 500;
+  color: white;
+}
+
+.prompt-input::placeholder {
+  font-weight: 500;
+  color: var(--text-color-dark);
+}
+
+.prompt-input:focus {
+  background-color: var(--input-bg-dark);
+  outline: none;
+}
+
+.prompt-input:focus::placeholder {
+  opacity: 0.5;
+}
+
+.submit-prompt-button {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--brand-color-primary);
+  color: white;
+  font-size: 1.5rem;
+}
+
+.submit-prompt-button:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+@media (max-width: 648px) {
+  .chatbox-container {
+    padding: 28px 24px 16px;
+  }
+
+  .prompt-input {
+    padding: 0 16px;
+  }
+
+  .prompt-input-bar {
+    gap: 10px;
+  }
+}

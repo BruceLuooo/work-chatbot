@@ -1,0 +1,37 @@
+.chevron-container {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.top-line {
+  fill: #9a9a9a;
+  transform-origin: 50% 8.84955752%;
+  transition: all 0.2s ease-in-out;
+}
+
+.bottom-line {
+  fill: #9a9a9a;
+  transform-origin: 50% 91.15044248%;
+  transition: all 0.2s ease-in-out;
+}
+
+.left-chevron-container:hover .top-line {
+  transform: rotate(10deg);
+  fill: white;
+}
+
+.left-chevron-container:hover .bottom-line {
+  transform: rotate(-10deg);
+  fill: white;
+}
+
+.right-chevron-container:hover .top-line {
+  transform: rotate(-10deg);
+  fill: white;
+}
+
+.right-chevron-container:hover .bottom-line {
+  transform: rotate(10deg);
+  fill: white;
+}

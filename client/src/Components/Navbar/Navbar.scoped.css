@@ -1,0 +1,51 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 28px;
+  width: 100%;
+}
+
+.logo-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.vosyn-logo {
+  display: flex;
+  height: 36px;
+  position: relative;
+}
+
+.settings-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 2px solid white;
+  background-color: var(--bg);
+  color: white;
+  padding: 16px 18px 16px 16px;
+  border-radius: 32px;
+  cursor: pointer;
+  font-size: var(--font-size-medium);
+  font-weight: 700;
+  transition: all 0.1s ease-in-out;
+}
+
+.settings-button:hover {
+  color: var(--text-color-inverted);
+  background-color: white;
+}
+
+@media (max-width: 640px) {
+  .navbar-container {
+    padding: 12px 12px;
+    width: 100%;
+  }
+
+  .settings-button {
+    padding: 12px 18px 12px 12px;
+  }
+}

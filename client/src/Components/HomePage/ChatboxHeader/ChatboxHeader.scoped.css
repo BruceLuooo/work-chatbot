@@ -1,0 +1,120 @@
+.chatbox-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  border: 1px solid var(--section-border-color);
+  border-radius: 12px;
+  background-color: var(--section-bg);
+  padding: 8px 10px 8px 8px;
+}
+
+.chatbox-assistant {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 12px;
+  padding: 4px 8px 4px 8px;
+  background: none;
+  gap: 12px;
+  color: white;
+  font-size: var(--font-size-h3);
+  font-family: var(--font);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.chatbox-assistant:hover {
+  background: var(--input-bg-dark);
+}
+
+.chatbox-assistant:disabled {
+  background: none;
+  cursor: default;
+}
+
+.assistant-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--section-border-color-light);
+}
+
+.chatbox-assistant span {
+  font-weight: 700;
+}
+
+.chatbox-assistant i {
+  background-color: transparent;
+  color: var(--text-color-dark);
+}
+
+.invert {
+  transform: rotate(180deg);
+}
+
+.clear-chat-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 8px;
+
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--text-color-dark);
+  transition: all 0.15s;
+}
+
+.clear-chat-button span {
+  font-weight: 700;
+}
+
+.clear-chat-button:hover {
+  background: var(--danger-color-light);
+  color: white;
+}
+
+.clear-chat-button:disabled {
+  cursor: default;
+  background-color: #4d4a4a;
+  color: white;
+  opacity: 0.6;
+}
+
+.modal {
+  position: absolute;
+  top: 85px;
+  left: 0;
+  width: 100%;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+@media (max-width: 640px) {
+
+.chatbox-assistant {
+  font-size: var(--font-size-large);
+}
+
+.chatbox-assistant > span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.clear-chat-button {
+  font-size: var(--font-size-medium);
+}
+
+}

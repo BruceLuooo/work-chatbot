@@ -1,0 +1,41 @@
+.modal-container {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--section-bg);
+  border: 1px solid var(--section-border-color);
+  z-index: 1;
+}
+
+.modal-container button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  font-size: var(--font-size-large);
+  background-color: var(--section-bg);
+  color: white;
+}
+
+.modal-container button:hover {
+  background-color: var(--input-bg-dark);
+}
+
+.active-page-container button {
+  color: var(--text-color-inverted);
+  background-color: white;
+}
+.active-page-container button:hover {
+  color: var(--text-color-inverted);
+  background-color: white;
+}

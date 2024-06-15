@@ -1,0 +1,10 @@
+.assistants-panel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: var(--section-bg);
+  border: 1px solid var(--section-border-color);
+  border-radius: 12px;
+  flex-grow: 1;
+  padding: 16px;
+}

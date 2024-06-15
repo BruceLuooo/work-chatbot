@@ -1,0 +1,31 @@
+.option-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px 10px 16px;
+  border-radius: 28px;
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: var(--font-size-big);
+  color: var(--text-color-dark);
+}
+
+.option-button:hover {
+  background-color: var(--input-bg-dark);
+  color: white;
+}
+
+.option-button:disabled {
+  background-color: white;
+  color: var(--text-color-inverted);
+}
+
+.option-title {
+  font-family: var(--font);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

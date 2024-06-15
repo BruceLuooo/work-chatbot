@@ -1,0 +1,70 @@
+.extra-options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: var(--section-bg);
+  border: 1px solid var(--section-border-color);
+  border-radius: 12px;
+  max-height: 320px;
+  padding: 20px;
+}
+
+.extra-option-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px 10px 16px;
+  border-radius: 28px;
+  border: none;
+  width: 100%;
+  color: var(--text-color-dark);
+  font-size: var(--font-size-big);
+  background: none;
+  cursor: pointer;
+}
+
+.extra-option-button:hover {
+  color: white;
+  background-color: var(--input-bg-dark);
+}
+
+.extra-option-button:disabled {
+  color: var(--text-color-inverted);
+  background-color: white;
+}
+
+.extra-option-button span {
+  font-weight: 500;
+  font-family: var(--font);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px 10px 16px;
+  border-radius: 28px;
+  border: none;
+  width: 100%;
+  color: var(--text-color-dark);
+  font-size: var(--font-size-big);
+  background: none;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.logout-button:hover {
+  color: white;
+  background-color: var(--danger-color-light);
+}
+
+.logout-button span {
+  font-weight: 500;
+  font-family: var(--font);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,31 @@
+.roles-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--section-bg);
+  border: 1px solid var(--section-border-color);
+  border-radius: 12px;
+  max-height: 320px;
+}
+
+.roles-header {
+  margin: 20px 0 16px 20px;
+}
+
+.roles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 0 20px 20px;
+  overflow-y: scroll;
+}
+
+.role {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--font-size-small);
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 4px 12px 4px 10px;
+}

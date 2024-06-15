@@ -1,0 +1,9 @@
+{
+  "name": "VosynVerse",
+  "short_name": "VOSYN",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "icons": []
+}

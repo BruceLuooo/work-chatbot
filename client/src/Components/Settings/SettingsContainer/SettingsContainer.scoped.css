@@ -1,0 +1,8 @@
+.setting-information-wrapper {
+  border: 1px solid var(--section-border-color);
+  border-radius: 12px;
+  background-color: var(--section-bg);
+  padding: 32px;
+  flex-grow: 1;
+  height: 128px;
+}

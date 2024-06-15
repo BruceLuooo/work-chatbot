@@ -1,0 +1,15 @@
+.assistants-panel-container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--section-bg);
+  border: 1px solid var(--section-border-color);
+  border-radius: 12px;
+  flex-grow: 1;
+}
+
+.assistants-header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24.2px;
+  margin: 20px 0 20px 20px;
+}

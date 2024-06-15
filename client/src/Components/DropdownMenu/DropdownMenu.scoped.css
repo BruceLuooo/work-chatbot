@@ -1,0 +1,24 @@
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  width: 200px;
+  border: 2px solid var(--section-border-color);
+  border-radius: 8px;
+  padding: 12px 0;
+  background-color: var(--section-bg);
+  z-index: 1;
+  max-width: 448px;
+  width: 100%;
+  margin-left: 8px;
+}
+
+.option {
+  padding: 8px 12px;
+}
+
+.option:hover {
+  background-color: var(--input-bg-dark);
+  cursor: pointer;
+}

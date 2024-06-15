@@ -1,0 +1,91 @@
+.assistant-container {
+  display: flex;
+  position: relative;
+  border: none;
+  margin: 0px 12px 12px 12px;
+}
+
+/* same code as above but without any of the hover css attached. Don't want any of the hover effects to be used on the active assistant */
+.active-assistant-container {
+  display: flex;
+  position: relative;
+  border: none;
+  margin: 0 12px 12px 12px;
+}
+
+.assistant-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px 8px 8px;
+  border-radius: 28px;
+  border: none;
+  width: 100%;
+  color: var(--text-color-dark);
+  background-color: var(--section-bg);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.selected-assistant-button {
+  color: var(--text-color-inverted);
+  background-color: white;
+}
+
+.assistant-image {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(26, 25, 25, 1);
+  border-radius: 50%;
+}
+
+.selected-assistant-button .assistant-image {
+  border: 2px solid var(--text-color-inverted);
+}
+
+.assistant-title-container {
+  display: flex;
+  max-width: calc(100% - 60px);
+  transform: translateY(-1px);
+  padding-left: 12px;
+}
+
+.assistant-title {
+  font-size: var(--font-size-medium);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: var(--font);
+}
+
+.extra-options {
+  display: flex;
+  position: absolute;
+  font-size: 1rem;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  /* justify-content: center; */
+  /* align-items: center; */
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hover-assistant-ellipsis {
+  color: var(--text-color-inverted);
+  display: none;
+}
+
+.assistant-container:hover .hover-assistant-ellipsis {
+  color: white;
+  display: block;
+}
+
+.assistant-container:hover .assistant-button {
+  color: white;
+  background-color: var(--input-bg-dark);
+}
